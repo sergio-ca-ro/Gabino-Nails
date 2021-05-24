@@ -9,14 +9,16 @@
 }
 /* Aca inicia el style del header */
 .menu{
-    background-color: lightcoral;
-    height: 70px;
+    background-color: #ffdfd3;
+    height: 80px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid white;
     box-shadow: 5px 0 10px rgba(0, 0, 0, 6);
+    position: fixed;
+    top: 0px;
 
 }
 .menu-items{
@@ -48,7 +50,7 @@
 .lbtn-menu #uno, #dos, #tres{
     position: absolute;
     content: "";
-    background-color: royalblue;
+    background-color: #957dad;
     width: 30px;
     height: 5px;
     border-radius: 5px;
@@ -62,7 +64,6 @@
 }
 #btn-menu{
     display: none;
-
 }
 #btn-menu:checked ~ .lbtn-menu #uno{
     transform: rotate(140deg);
@@ -75,24 +76,48 @@
     transform: rotate(-140deg);
     top: 10px;
 }
-body{
-    background-image: url("../image/fondo.jpg");
-    background-size: auto;
+
+.principal {
+    background-image: url("../image/manosol.jpg");
     background-repeat: no-repeat;
-    
+    background-size: cover;
+    background-position: center center; 
+    width: 100%;
+    height: 90vh;
+    margin-top: 80px;
 }
-.div-encabezado p{
-    font-size: 20px;
+.div-encabezado h2{
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
-    color: crimson;
+    color: black;
     font-family: 'Pattaya', sans-serif;
 
 }
-.div-form{
-    margin: 20px;
+.frase h3{
+    font-family: 'Pattaya', sans-serif;
+    text-align: left;
+    
+    
+}
+.cuadro h1{
+    height: 120px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    position: relative;
+    
+}
+.button-servicios{
+    width: 100px;
+    height: 40px;
+     
+}
+.button-servicios a{
+    text-decoration: none;
 }
 
+/* Aca inicia el style de la tabala */
 .table{
     padding: 10px;
     background-color: rosybrown;
@@ -116,27 +141,39 @@ body{
 .image-body{
     height: 700px;
     width: 100%;
-}
+} 
 /* Aca inicia el estilo de galeria */
 .div-galeria{
-    width: 90%;
-    height: 500px;
-    background-color: crimson;
+    width: 70%;
+    height: 400px;
+    background-color: #d291bc;
     margin: 50px;
     text-align: center;
+}
+.imagen-galeria{
+    height: 80%;
+    width: 70%;
 }
 /* Aca inicia el stile de nosotro */
 .article-nosotros{
     width: 50%;
     height: 300px;
-    background-color: rebeccapurple;
+    background-color: #957dad;
     margin: 50px;
 }
 /* Aca inicia el style del footer */
 .div-footer{
     width: 100%;
     height: 100px;
-    background-color: aqua;
+    background-color: #ffdfd3;
     text-align: center;
+}
+/* Aca inicia el estyle del login */
+.div-form{
+    margin: 20px;
+    background-color: #e0bbe4;
+    padding: 20px;
+    width: 40vw;
+    height: 300px;
 }
    
