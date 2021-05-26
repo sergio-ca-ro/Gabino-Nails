@@ -78,7 +78,7 @@
 }
 
 .principal {
-    background-image: url("../image/manosol.jpg");
+    background-image: url("../image/manosvacio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; 
@@ -102,19 +102,50 @@
 }
 .cuadro h1{
     height: 120px;
-    width: 200px;
+    width: 300px;
+    padding: 10px;
     background-color: black;
     color: white;
-    position: relative;
+    margin-left: 20px;
+    
     
 }
 .button-servicios{
     width: 100px;
     height: 40px;
+    border: solid 5px #957dad;
+    margin-left: 20px;
      
 }
 .button-servicios a{
     text-decoration: none;
+}
+.div-whatsapp{
+    background-color: #d291bc;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50% ;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease o.5s;
+    animation: forma 1.5s infinite;
+}
+.div-whatsapp:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.btn-whatsaap{
+    width: 80px;
+    transition: ease 1s;
+}
+@keyframes forma{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0,0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 20px rgba(0, 0,0, 0);
+    }
 }
 
 /* Aca inicia el style de la tabala */
@@ -153,6 +184,7 @@
 .imagen-galeria{
     height: 80%;
     width: 70%;
+    padding: 10px;
 }
 /* Aca inicia el stile de nosotro */
 .article-nosotros{
@@ -160,6 +192,7 @@
     height: 300px;
     background-color: #957dad;
     margin: 50px;
+    padding: 10px;
 }
 /* Aca inicia el style del footer */
 .div-footer{
